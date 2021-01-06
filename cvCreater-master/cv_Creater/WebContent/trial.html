@@ -1,0 +1,47 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<form action="com.cv.services.A" method="get">
+<input type="file" id="flup" onchange="getfolder(event)" webkitdirectory mozdirectory msdirectory odirectory directory multiple />
+<input type="text" name="file" id="myText" >
+<input type="submit" value="OK" onclick="myFunction()">
+</form>
+
+<script>
+function getfolder(e) {
+    var files = e.target.files;
+    var path = files[0].webkitRelativePath;
+    var Folder = path.split("/");
+    alert(Folder[0]);
+}
+
+function myFunction() {
+  document.getElementById("myText").value = "Johnny Bravo";
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>
+ -->
+ <!DOCTYPE input PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+ <form action="com.cv.services.A">
+ <input type="file" name="file" id="fileUpload">
+<input type="submit" value="OK">
+</form>
+<script type="text/javascript">
+
+    $(function()
+    {
+        $('#fileUpload').on('change',function ()
+        {
+            var filePath = $(this).val();
+            console.log(filePath);
+        });
+    });
+
+</script>
